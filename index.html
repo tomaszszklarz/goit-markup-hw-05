@@ -18,7 +18,7 @@
             <a class="header-link link" href="./index.html"><span class="logo">Web</span>Studio</a>
             <nav class="navi">
                 <ul class="navi-link list">
-                    <li class="navi-list-item"><a class="navi-list-link link" href="./index.html">Agencja</a></li>
+                    <li class="navi-list-item one"><a class="navi-list-link link" href="./index.html">Agencja</a></li>
                     <li class="navi-list-item"><a class="navi-list-link link" href="./portfolio.html">Portfolio</a></li>
                     <li class="navi-list-item"><a class="navi-list-link link" href="#">Kontakt</a></li>
                 </ul>
@@ -38,7 +38,7 @@
         <section class="efect section">
                 <div class="conteiner">
                     <h1 class="efect-head">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                    <button class="btn-service" type="button">Zamów usługę</button>
+                    <button class="btn-service" type="button"data-modal-open>Zamów usługę</button>
                 </div> 
         </section>
         <div class="description section">
@@ -374,5 +374,11 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden "data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn"data-modal-close>X</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
