@@ -295,6 +295,25 @@ figure {
 .working-list-item:not(:last-child){
     margin-right: 30px;
 }
+.working-contens {
+    position: relative;
+    overflow: hidden;
+}
+.working-contens > .working-contens-item {
+    position: absolute;
+    bottom: 4px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.172em;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
 .teams .conteiner {
     display: flex;
     justify-content: space-between;
