@@ -67,6 +67,9 @@ figure {
     line-height: 1.192em;
     color: #212121;
     margin-right: 93px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header {
     border: 1px solid #ECECEC;
@@ -79,6 +82,7 @@ figure {
 .header-link:hover, .header-link:focus,
  .header-link:active {
         color: var(--secend-color);
+        
 }
 .navi-list-link {
     color: #212121;
@@ -86,6 +90,26 @@ figure {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navi-list-item {
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+   
+}
+.navi-list-item:first-child::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: var(--secend-color);
+    position: absolute;
+    bottom: -32px;
 }
 .link-mail, .link-phone {
     color: var(--first-color);
@@ -93,37 +117,58 @@ figure {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142em; 
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .link-mail {
     display: flex;
     margin-left: auto;
     margin-right: 50px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-icons {
     margin-right: 10px;
     width: 12px;
     height: 16px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .link-mail:hover,
 .link-mail:focus {
     fill: var(--secend-color);
+    
 }
 .phone-icons {
     margin-right: 10px;
     width: 10px;
     height: 16px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-phone {
     display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-phone:hover,
 .link-phone:focus {
     fill: var(--secend-color);
+    
 }
 .navi-list-link:hover, .navi-list-link:focus, .navi-list-link:active,
 .link-mail:hover, .link-mail:focus, .link-mail:active,
 .link-phone:hover, .link-phone:focus, .link-phone:active  {
     color: var(--secend-color);
+   
+    
 }
 /*--------End Header----------*/
 /*-------Body----------*/
@@ -176,6 +221,7 @@ figure {
     color: var(--secend-color);
     cursor: pointer;
     color: white;
+    
 }
 .description .conteiner {
     display: flex;
@@ -271,11 +317,15 @@ figure {
     justify-content: center;
     align-items: center;
     fill: #AFB1B8;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list_link:hover,
 .social-list_link:focus {
     fill: white;
     background-color: var(--secend-color);
+    
 }
 
 .social-icons {
@@ -367,12 +417,16 @@ figure {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list-item:hover,
 .client-list-item:focus {
     fill: var(--secend-color);
     border: 1px solid var(--secend-color);
     cursor: pointer;
+    
 }
 /*-------End Body-------*/
 /*--------footer---------*/
@@ -410,10 +464,14 @@ figure {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     fill: rgba(255, 255, 255, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-list_link:hover, 
 .address-list_link:focus {
     background-color: var(--secend-color);
+    
 }
 .address-icons {
     width: 20px;
@@ -438,6 +496,9 @@ figure {
     padding: 6px 22px;
     border-radius: 4px;
     border: none;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-list:hover, .btn-list:focus, .btn-list:active {
     color: var(--secend-color);
@@ -446,6 +507,8 @@ figure {
     color: white;
     border-radius: 4px;
     border: none;
+    
+    
 }
 .fotos-caption {
     font-size: 18px;
@@ -494,6 +557,7 @@ figure {
 .fotos-list-item:hover {
    border: 1px solid var(--secend-color);
    cursor: pointer;
+   
 }
 
 .fotos-caption {
